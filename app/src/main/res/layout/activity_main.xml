@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.assignmentandroidnetworking.assignment_phibvpd01901.Activity.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        app:title="Quản Lý Sinh Viên"
+        android:id="@+id/trangchinh"
+        app:titleTextColor="#ffffffff"
+        android:background="#777777"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:columnWidth="80dp"
+        android:gravity="center"
+        android:numColumns="2"
+        android:stretchMode="columnWidth" />
+
+</LinearLayout>

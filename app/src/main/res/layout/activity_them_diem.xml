@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.assignmentandroidnetworking.assignment_phibvpd01901.Activity.ThemDiem">
+    <android.support.v7.widget.Toolbar
+        app:title="Thêm Điểm Sinh Viên"
+        android:id="@+id/trangthemdiemsinhvien"
+        app:titleTextColor="#ffffffff"
+        android:background="#777777"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thêm điểm sinh viên mới"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#ff0000"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edittimkiemmasv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Nhập mã vinh viên cần tìm" />
+                <Button
+                    android:id="@+id/bnttiemkiemmasv"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/searchview"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:text="Mã SV:" />
+            <EditText
+                android:id="@+id/editThemdiemMaSV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Mã Sinh Viên" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:text="Họ Tên:" />
+            <EditText
+                android:id="@+id/editthemdiemhoTen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Họ Tên"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:text="Tên Môn Thứ Nhất:" />
+            <EditText
+                android:id="@+id/editmonthunhat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Tên Môn Thứ Nhất"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:text="Điểm Môn Thứ Nhất:" />
+            <EditText
+                android:id="@+id/editdiemmonthunhat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Điểm Môn Thứ Nhất"/>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:text="Tên Môn Thứ Hai:" />
+            <EditText
+                android:id="@+id/editmonthuhai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Tên Môn Thứ Hai"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Điểm Môn Thứ Hai:" />
+            <EditText
+                android:id="@+id/editdiemmonthuhai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Điểm Môn Thứ Hai"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Tên Môn Thứ Ba:" />
+            <EditText
+                android:id="@+id/editmonthuba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Tên Môn Thứ Ba"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Điểm Môn Thứ Ba:" />
+            <EditText
+                android:id="@+id/editdiemmonthuba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Điểm Môn Thứ Ba"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Điểm Trung Bình:" />
+            <EditText
+                android:id="@+id/editdiemtrungbinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customedit"
+                android:hint="Nhập Điểm Trung Bình"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:text="Link ảnh:" />
+            <EditText
+                android:id="@+id/editthemdiemlinkanh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/customedit"
+                android:hint="Nhập link ảnh"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+                <Button android:id="@+id/bntdiemthem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thêm"
+                    android:clickable="true"
+                    android:layout_marginLeft="40dp"
+                    android:background="#00ff00"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@android:color/white"/>
+                <Button android:id="@+id/bntdiemthoat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thoát"
+                    android:clickable="true"
+                    android:layout_marginLeft="80dp"
+                    android:background="#ff0000"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

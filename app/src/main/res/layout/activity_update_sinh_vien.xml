@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.assignmentandroidnetworking.assignment_phibvpd01901.Activity.UpdateSinhVien">
+    <android.support.v7.widget.Toolbar
+        app:title="Cập Nhật Sinh Viên"
+        android:id="@+id/trangcapnhatsinhvien"
+        app:titleTextColor="#ffffffff"
+        android:background="#777777"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật thông tin"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#ff0000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:text="Mã SV:" />
+        <EditText
+            android:id="@+id/editTextMaSV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/customedit"
+            android:hint="Nhập Mã Sinh Viên" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:text="Họ Tên:" />
+        <EditText
+            android:id="@+id/edithoTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/customedit"
+            android:hint="Nhập Họ Tên"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:text="Giới Tính:" />
+        <EditText
+            android:id="@+id/edigioitinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/customedit"
+            android:hint="Nhập Giới Tính"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:text="Mã Lớp và Lớp:" />
+        <EditText
+            android:id="@+id/editlop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/customedit"
+            android:hint="Nhập Mã lớp and Lớp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:text="Link ảnh:" />
+        <EditText
+            android:id="@+id/editlinkanh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customedit"
+            android:hint="Nhập link ảnh"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:text="Ngày sinh:" />
+        <EditText
+            android:id="@+id/editngaysinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customedit"
+            android:hint="Chọn ngày"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <Button android:id="@+id/bntcapnhat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cập nhật"
+                android:clickable="true"
+                android:layout_marginLeft="40dp"
+                android:background="#00ff00"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/white"/>
+            <Button android:id="@+id/bntthoat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thoát"
+                android:clickable="true"
+                android:layout_marginLeft="80dp"
+                android:background="#ff0000"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.assignmentandroidnetworking.assignment_phibvpd01901.Activity.XepLoai">
+    <android.support.v7.widget.Toolbar
+        app:title="Xếp Loại"
+        android:id="@+id/trangxeploai"
+        app:titleTextColor="#ffffffff"
+        android:background="#777777"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#3CB371"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="Danh Sách Khen Thưởng"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="1dp"
+            android:weightSum="100" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="30"
+                android:background="#008000"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="Mã sinh viên" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="60"
+                android:background="#008000"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="Tên sinh viên" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="10"
+                android:background="#008000"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center|left"
+                android:paddingLeft="5dp"
+                android:text="Điểm TB" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đức"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:textColor="#ff0000"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mã SV"
+                android:textColor="#0004ff"
+                android:id="@+id/masvongvang"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tenongvangpolytxt"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:layout_marginLeft="100dp"
+                android:layout_gravity="center"
+                android:text="Tên"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dtbongvang"
+                android:textSize="20dp"
+                android:textColor="#ff0000"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:text="Điểm"/>
+
+        </LinearLayout>
+
+        // list xuatsac
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sinh viên Giỏi"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="#ff0000"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listview_sv_xuatsac">
+
+            </ListView>
+
+
+        </LinearLayout>
+
+
+        // list gioi
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sinh viên khá"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:textColor="#ff0000"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listview_sv_gioi">
+
+            </ListView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
